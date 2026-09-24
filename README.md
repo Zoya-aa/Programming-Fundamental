@@ -1,34 +1,41 @@
 PART B Q1 IPO
+
 INPUT:
 - Season
 - Room type
 - Number of nights
 - Number of guests
+ 
 PROCESS:
 - Select room rate according to season and room type
 - Calculate price= rate × nights
 - Apply 15% discount if nights>7
 - Calculate final price
 - Add final price to total hotel revenue
+
 OUTPUT:
 - Final price for each guest
 - Total hotel revenue
 
 PART B Q1 PAC
+
 INPUT:
 - Number of guests
 - Season
 - Room type
 - Number of nights
-  PROCESS:
+
+PROCESS:
 - Select room rate based on season and room type
 - Calculate price= rate × nights
 - If nights>7,apply 15% discount
 - Calculate final price
 - Add final price to total hotel revenue
-  OUTPUT:
+
+OUTPUT:
 - Final price for each guest
 - Total hotel revenue
+
 Alternate Solution:
 - Use separate conditions for Peak and Off-Peak rates
 - Select the rate according to the room type
@@ -36,16 +43,19 @@ Alternate Solution:
 - Check if nights are more than 7 and apply the discount
 
 PART B Q2 IPO
+
 INPUT:
 - Number of floor requests
 - Requested floor
 - Starting floor (Floor 0)
+
 PROCESS:
 - Compare requested floor with current floor
 - If requested floor>current floor,print "Moving Up"
 - If requested floor<current floor,print "Moving Down"
 - If requested floor=current floor,print "Doors Opening"
 - Update current floor to requested floor
+
 OUTPUT:
 - "Moving Up","Moving Down",or"Doors Opening" for each request
 - Current floor after each stop
@@ -53,19 +63,23 @@ OUTPUT:
 - Display the results
 
 PART B Q2 PAC
+
 INPUT:
 - Number of floor requests
 - Requested floor
-- Starting floor = 0
-  PROCESS:
+- Starting floor= 0
+
+ PROCESS:
 - Compare requested floor with current floor
 - If requested floor is higher,print "Moving Up"
 - If requested floor is lower,print "Moving Down"
 - If requested floor is the same,print "Doors Opening"
 - Update current floor to requested floor
+
   OUTPUT:
 - Movement message for each request
 - Final current floor
+
 Alternate Solution:
 - Set the current floor to 0
 - Take the requested floor one by one
@@ -75,9 +89,11 @@ Alternate Solution:
 - Repeat until all floor requests are processed
 
 PART B Q3 IPO
+
 INPUT:
 - Number of students
 - 5 subject marks for each student
+
 PROCESS:
 - Add the 5 subject marks
 - Calculate average=sum ÷ 5
@@ -86,14 +102,17 @@ PROCESS:
 - Otherwise, if average >= 80, classify as "Distinction"
 - If average >= 60 and below 80, classify as "Pass"
 - If average < 60, classify as "Fail"
+
 OUTPUT:
 - Average marks for each student
 - Result for each student
 
 PART B Q3 PAC
+
 INPUT:
 - Number of students
 - 5 subject marks for each student
+
 PROCESS:
 - Add the 5 subject marks
 - Calculate the average
@@ -103,9 +122,11 @@ PROCESS:
   . Average >= 80= "Distinction"
   . Average >= 60 and < 80= "Pass"
   . Average < 60= "Fail"
-  OUTPUT:
+
+OUTPUT:
 - Average marks for each student
 - Result for each student
+
 Alternate Solution:
 - Take the 5 marks for each student
 - Keep a check for any mark <33
@@ -115,11 +136,13 @@ Alternate Solution:
 - Display the appropriate result for the student
 
 PART B Q4 IPO
+
 INPUT:
 - Quantity of products
 - Price per item
 - Discount percentage
 - Tax percentage
+
 PROCESS:
 - Calculate subtotal= quantity × price
 - Calculate discount amount
@@ -128,6 +151,7 @@ PROCESS:
 - Calculate final bill
 - Validate all entered values
 - Store calculation details and generate the bill
+
 OUTPUT:
 - Subtotal
 - Discount amount
@@ -136,11 +160,13 @@ OUTPUT:
 - Bill document
 
 PART B Q4 PAC
+
 INPUT:
 - Quantity of products
 - Price per item
 - Discount percentage
 - Tax percentage
+
 Process:
 - Validate all entered values
 - Calculate subtotal= quantity × price
@@ -149,12 +175,14 @@ Process:
 - Calculate final bill
 - Store calculation details
 - Generate the bill document
+
 Output:
 - Subtotal
 - Discount amount
 - Tax amount
 - Final bill
 - Bill document
+
 Alternate Solution:
 - Take all required values from the customer
 - Check whether the entered values are valid
@@ -165,6 +193,7 @@ Alternate Solution:
 - Display the final bill to the customer
 
 PART B Q5 IPO
+
 INPUT:
 - Number of vehicles
 - Vehicle type (Car/Bike)
@@ -172,6 +201,7 @@ INPUT:
 - Permit status
 - Emergency vehicle status
 - Current occupied spaces in Zone A,B and C
+
 PROCESS:
 - Validate the vehicle and permit information
 - Check parking eligibility based on vehicle type,driver type and permit
@@ -181,6 +211,7 @@ PROCESS:
 - Update the occupied spaces after each vehicle
 - Track parked, rejected,car,and bike counts
 - Check whether the parking facility is full
+
 OUTPUT:
 - Total number of vehicles processed
 - Total accepted vehicles
@@ -191,6 +222,7 @@ OUTPUT:
 - Parking facility full/not full status
 
 PART B Q5 PAC
+
 INPUT:
 - Number of vehicles
 - Vehicle type (Car/Bike)
@@ -198,6 +230,7 @@ INPUT:
 - Permit status
 - Emergency vehicle status
 - Current occupied spaces in Zone A,B,and C
+
 PROCESS:
 - Validate vehicle and permit information
 - Check the vehicle's parking eligibility
@@ -208,6 +241,7 @@ PROCESS:
 - Count parked and rejected vehicles
 - Count cars and bikes
 - Check if the parking facility is full
+
 OUTPUT:
 - Total vehicles processed
 - Total accepted vehicles
@@ -217,6 +251,7 @@ OUTPUT:
 - Number of successfully parked vehicles
 - Final occupancy of Zone A, B, and C
 - Whether the parking facility is full
+
 Alternate Solution:
 - Take vehicle details one by one
 - Validate the entered information
@@ -229,6 +264,7 @@ Alternate Solution:
 - Display the final parking summary
 
 PART B Q6 IPO
+
 INPUT:
 - Vehicle type (EV/Hybrid)
 - Battery charge level (SOC)
@@ -240,6 +276,7 @@ INPUT:
 - Emergency charging priority status
 - Charging station availability
 - Parking duration and charging rate
+
 PROCESS:
 - Check whether the charging station is available
 - Check whether the vehicle can use the charging station
@@ -250,6 +287,7 @@ PROCESS:
 - Apply priority rules and any required charges
 - Calculate the final payable amount
 - Generate appropriate warning messages
+
 OUTPUT:
 - Vehicle type
 - Current battery percentage
@@ -260,6 +298,7 @@ OUTPUT:
 - Appropriate warning messages
 
 PART B Q6 PAC 
+
 INPUT:
 - Vehicle type (EV/Hybrid)
 - Battery charge level(SOC)
@@ -270,6 +309,7 @@ INPUT:
 - Disabled-person priority status
 - Emergency charging priority status
 - Charging station availability
+
 PROCESS:
 - Check charging station availability
 - Check vehicle eligibility
@@ -280,6 +320,7 @@ PROCESS:
 - Calculate parking charges
 - Calculate final payable amount
 - Display appropriate warnings
+
 OUTPUT:
 - Vehicle type
 - Current battery percentage
@@ -288,6 +329,7 @@ OUTPUT:
 - Final payable amount
 - Charging/parking status
 - Appropriate warning messages
+
 Alternate Solution:
 - Take the vehicle and charging details
 - Check station availability
