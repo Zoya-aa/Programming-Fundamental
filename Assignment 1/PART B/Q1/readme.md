@@ -9,3 +9,11 @@
 |                  | Add final price to total hotel revenue             |                            |
 
 PAC Chart
+|     Input        | Process                                        | Conditions                                      | Loops                                   | Output                     | Alternate Solution                                     |
+| ---------------- | ---------------------------------------------- | ----------------------------------------------- | --------------------------------------- | -------------------------- | ------------------------------------------------------ |
+| Number of guests | Select room rate based on season and room type | If season is Peak, use Peak rates               | Repeat the process for each guest       | Final price for each guest | Use separate conditions for Peak and Off-Peak rates    |
+| Season           | Calculate price = rate × nights                | Else, use Off-Peak rates                        | Continue until all guests are processed | Total hotel revenue        | Select the rate according to room type                 |
+| Room type        | If nights > 7, apply 15% discount              | If room type is Standard, select Standard rate  |                                         |                            | Calculate the total price                              |
+| Number of nights | Calculate final price                          | Else if room type is Deluxe, select Deluxe rate |                                         |                            | Check if nights are more than 7 and apply the discount |
+|                  | Add final price to total hotel revenue         | Else, select Suite rate                         |                                         |                            |                                                        |
+|                  |                                                | If nights > 7, apply 15% discount               |                                         |                            |                                                        |
