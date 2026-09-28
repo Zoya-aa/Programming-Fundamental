@@ -1,6 +1,4 @@
 IPO CHART
-## IPO Chart – EV/Hybrid Charging System
-
 |
 INPUT
 
@@ -128,4 +126,3 @@ Generate appropriate warning messages
 Parking duration and charging rate
 
 |  |  |
-
