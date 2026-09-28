@@ -1,6 +1,6 @@
-### IPO Chart – Hotel Booking System
+ IPO Chart 
 
-| **INPUT**        | **PROCESS**                                        | **OUTPUT**                 |
+|   INPUT          |   PROCESS                                          | OUTPUT                     |
 | ---------------- | -------------------------------------------------- | -------------------------- |
 | Season           | Select room rate according to season and room type | Final price for each guest |
 | Room type        | Calculate price = rate × nights                    | Total hotel revenue        |
