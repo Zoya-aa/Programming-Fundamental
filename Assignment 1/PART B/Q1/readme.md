@@ -1,1 +1,11 @@
+ IPO Chart 
 
+|   INPUT          |   PROCESS                                          | OUTPUT                     |
+| ---------------- | -------------------------------------------------- | -------------------------- |
+| Season           | Select room rate according to season and room type | Final price for each guest |
+| Room type        | Calculate price = rate × nights                    | Total hotel revenue        |
+| Number of nights | Apply 15% discount if nights > 7                   |                            |
+| Number of guests | Calculate final price                              |                            |
+|                  | Add final price to total hotel revenue             |                            |
+
+PAC Chart
